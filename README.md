@@ -30,7 +30,11 @@ Modify the scripts as needed for your specific migration scenario.
 Execute the scripts in your local environment.
 
 ### How it Works
-Provide a brief explanation of what each script does and how they work together to facilitate migration.
+Each of the scripts provide a self explanation by name on how they work in two different scenarios:
+
+- Organization Migration as a whole: Creating migration file, locking repos to migrate, populating metadata, and control for migration (logs)
+- User migration: Control for metadata and lock users before migration (right after creating the migration file)
+- Error handling is provided for every script
 
 ### Contributing
 To contribute, please use python 3.9 and follow the API calls and instructions from https://docs.github.com/en/rest/migrations?apiVersion=2022-11-28 to interact with the GitHub's REST API
